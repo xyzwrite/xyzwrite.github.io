@@ -1,0 +1,63 @@
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
+* {
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+body {
+    background-color: slategrey;
+    padding: 0 25px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.topbar {
+    height: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.imgbox {
+    border: 2px solid;
+    width: 480px;
+    height: 270px;
+    background-size: cover;
+}
+
+.textbox {
+    border: 2px solid;
+    border-radius: 0 0 5px 5px;
+    padding: 16px 10px;
+    text-wrap: wrap;
+    font-size: 10px;
+    width: 460px;
+    background-color: lightgrey;
+}
+
+.imgbox, .textbox {
+    margin: auto;
+    border-color: #909090;
+}
+
+
+.options {
+    position: fixed;
+    border: 2px solid black;
+    border-radius: 0 15px 0 0;
+    background-color: lightgrey;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px 10px;
+    width: 250px;
+    height: 15px;
+    font-size: 13px;
+}
