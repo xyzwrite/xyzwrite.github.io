@@ -1,7 +1,7 @@
 const url_args_str = window.location.search
 const url_args = new URLSearchParams(url_args_str)
 const get_pg = url_args.get('pg')
-let pg = (get_pg !== '') ? parseInt(get_pg) : 1
+let pg = (get_pg != '') ? parseInt(get_pg) : 1
 
 let page = {
     title: document.getElementById("title"),
@@ -9,10 +9,11 @@ let page = {
     body: document.getElementById("body")
 }
 
-fetch(`./assets/txt/page_${pg}.json`)
+fetch(`./page/assets/txt/page_${pg}.json`)
     .then(response => { return response.json() })
     .then(data => {
         page.title.innerHTML = data.title
         page.body.innerHTML = data.body
-        page.image.style.backgroundImage = `url(assets/img/${data.image.source})`
+        page.image.style.backgroundImage = `url(page/assets/img/${data.image.source})`
+        document.title = `${data.title} | XYZ`
     });

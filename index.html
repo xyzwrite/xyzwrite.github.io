@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home | XYZ</title>
+
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="topbar" id="title">
+            Welcome, strange traveler
+        </div>
+        <div class="announcements">
+            Nothing here yet...
+        </div>
+        <div class="textbox">
+            Welcome to the world of XYZ! Here is a catalogue of writing projects created by
+            XYZWrite, itself being a project by cocosbeans.<br><br>
+            This project was initially created in Jan 2024. All authored work is under
+            CC-BY-NC-SA 4.0 and all webcode is under MPL 2.0.
+            <br><br>
+            <label for="story">Choose a story to read and an optional page number!</label><br>
+            <select name="story" id="story">
+                <option value="xyz">XYZ</option>
+            </select>
+            <input type="number" id="pgnum" placeholder="Page">
+            <button onclick="goto()">Go!</button>
+        </div>
+    </body>
+</html>
